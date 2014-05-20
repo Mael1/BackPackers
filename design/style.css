@@ -1,0 +1,351 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BACKGROUND        ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body
+{
+ margin:0;
+  padding:0;
+ /* background: url(ban.jpg) no-repeat center fixed; */
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////    STRUCTURE GLOBALE    ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#conteneur_1
+{
+	min-height : 100%;
+}
+
+#conteneur_2
+{
+	width : 1000px;
+	min-width : 600px;
+	margin : auto;
+	padding-bottom : 125px;
+}
+
+#corps
+{
+	width : 100%;
+	background-color : #FFFFFF;
+	color : #000000;
+	
+	
+	
+	
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////        BANNIERE        ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#banniere
+{
+	height : 180px;	
+	min-width : 400px;
+	padding-left: 70%;
+	margin-top : -10px;
+	background : url("logobp2.png") top center;
+        background-repeat:no-repeat;
+		position:absolute;
+		z-index:4;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////          TEXTE          ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#texte 
+{
+	padding : 20px;
+	text-align : justify;
+	font-size : 20px;
+}
+
+.zone1 {    /* zone cliquable */
+width : 250px;
+height: 180px;
+float:top center;
+margin: 10px 10px 10px 30px;
+}
+.zone1 a:link, .zone1 a:visited, .zone1 a:hover, .zone1 a:active { /* pas de lien sur zone cliquable */
+text-decoration:none;
+border-bottom:none;
+}
+
+
+.cadre
+{
+	border : 1px solid #000000;
+	background-color : #FFFFFF;
+	
+}
+
+.titre
+{
+	height : 20px;
+	background : url("cadre.png");
+	color : #000000;
+	text-align : center;
+	font-size : 24px;
+	font-weight : bold;
+	padding-top : 0px;
+}
+
+.marge_interne
+{
+	padding : 10px 10px 0px 10px;
+}
+
+p
+{
+	margin-top : 0px;
+}
+
+h1
+{
+	font-size : 19px;
+	margin-top : 0px;
+}
+
+h2
+{
+	font-size : 16px;
+	margin-top : 0px;
+}
+		
+a
+{
+	color : #288de8;
+	text-decoration : none;
+}
+
+a:hover
+{
+	color : #FFFFFF;
+}
+
+#overflow
+{
+	overflow : hidden;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////     MENU HORIZONTAL     ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#MH
+{
+	height : 33px;
+	min-width : 600px;
+	background : url("MH.png");
+	margin : 0px;
+	padding : 0px;
+	text-align : center;
+
+}
+
+#MH a
+{
+	display : inline-block;
+	margin : 0px;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+.groupe_lien_MH
+{
+	display : inline-block;
+	position: relative;
+	margin-right:5px;
+	margin-left:-1px;
+	z-index : 90;
+}
+
+.groupe_lien_MH a.menu_MH 
+{
+	height : 26px;
+	width:160px;
+	padding-top : 7px;
+	padding-left:0px;
+	padding-right:0px;
+	text-decoration:none;
+	text-align : center;
+	color : #FFFFFF;
+}
+
+
+.groupe_sublien_MH
+{
+	display : none;
+	position: absolute;
+	min-width :100%;
+	top:33px;
+	left :0px;
+	padding-left:0px;
+	padding-right:0px;
+	text-align : left;
+}
+
+.sublien_MH a
+{
+	position : relative;
+	height : 28px;
+	width : 120px;
+	padding-top : 9px;
+	background : url("MH_deroulant.png");
+	background-repeat: repeat;
+	text-align : left;
+	color:#FFFFFF;
+}
+
+.groupe_sublien_MH a
+{
+	padding-top : 9px;
+	padding-left:20px;
+	padding-right:20px;
+	white-space: pre;
+	color:#FFFFFF;
+}
+
+.groupe_lien_MH:hover .groupe_sublien_MH, .groupe_lien_MH_hover .groupe_sublien_MH
+{
+	color:#FFFFFF;
+}
+
+.groupe_lien_MH:hover a.menu_MH, .groupe_lien_MH_hover a.menu_MH
+{
+	background : url("MH_hover.png");
+	color : #FFFFFF;
+}
+
+.sublien_MH a:hover
+{
+	background : url("MH_deroulant_hover.png");
+	color:#FFFFFF;
+}
+
+.MH_deroulant_bottom
+{
+	height : 1px;
+	width : 160px;
+	background : url("MH_deroulant_bottom.png") repeat-x;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////       BAS DE PAGE       ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#pied_de_page
+{
+	height : 35px;
+	background : url("pied_de_page.png") center;
+	margin-top : -50px;
+		width : 100%;
+	min-width : 600px;
+	text-align : center;
+	padding-top : 15px;
+	color : #000000;
+	pacit: 0.93;
+	position:absolute;
+		z-index:4;
+}
+
+#pied_de_page a
+{
+	color : #FFFFFF;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////         BORDURE         ///////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+#CHG
+{
+	background : url("CHG.png") no-repeat top left;
+	float : left;
+	width : 15px;
+	height : 15px;
+	margin : 0px;
+	opacity: 0.75;
+}
+
+#CHD
+{
+	background : url("CHD.png") no-repeat top right;
+	float : right;
+	width : 15px;
+	height : 15px;
+	margin : 0px;
+		opacity: 0.75;
+}
+
+#CBG
+{
+	background : url("CBG.png") no-repeat bottom left;
+	float : left;
+	width : 15px;
+	height : 15px;
+	margin : 0px;
+		opacity: 0.75;
+}
+
+#CBD
+{
+	background : url("CBD.png") no-repeat bottom right;
+	float : right;
+	width : 15px;
+	height : 15px;
+	margin : 0px;
+		opacity: 0.75;
+}
+
+#BH
+{
+	background : url("BH.png") repeat-x top center;
+	margin-right : 15px;
+	margin-left : 15px;
+	height : 15px;
+		opacity: 0.75;
+}
+
+#BG
+{
+	background : url("BG.png") repeat-y left;
+	padding-left : 15px;
+	margin : 0px;
+		opacity: 0.75;
+}
+
+#BD
+{
+	background : url("BD.png") repeat-y right;
+	padding-right : 15px;
+	margin : 0px;
+		opacity: 1;
+}
+
+#BB
+{
+	background : url("BB.png") repeat-x bottom center;
+	margin-right : 15px;
+	margin-left : 15px;
+	height : 15px;
+	padding : 0px;
+		opacity: 0.75;
+}
+

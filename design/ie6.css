@@ -1,0 +1,25 @@
+#CHG{margin-right : -15px; margin-bottom : -15px;}
+#CHD{margin-left : -15px; margin-bottom : -3px;}
+#CBG{margin-right : -15px; margin-top : -3px;}
+#CBD{margin-left : -15px; margin-top : -3px;}
+#BH{margin-bottom : -3px; margin-right : 15px; margin-left : 15px;}
+#BB{margin-top : -3px; margin-right : 15px; margin-left : 15px;}
+
+#conteneur_1{height : 100%;}
+
+html{font-family : sans-serif;}
+#banniere, #MH, #MV, #texte, #pied_de_page{font-family : "Trebuchet MS" , sans-serif;}
+
+#overflow{width : 99%;}
+
+.groupe_lien_MH
+{
+	display : inline;
+	margin-left:0px;
+}
+
+.sublien_MH
+{
+	height : 37px;
+	width : 120px;
+}
